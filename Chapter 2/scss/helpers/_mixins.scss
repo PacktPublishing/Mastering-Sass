@@ -1,0 +1,37 @@
+// mastering-sass/ch02/scss/helpers/_mixins.scss
+@mixin base-font-family-sizing($current-font-family: $base-font-family) {
+    font-size: base-font-size-calc();
+    font-family: $current-font-family;
+    line-height: $base-line-height;
+    margin-bottom: $base-font-size * $base-line-height;
+}
+
+// mastering-sass/scss/helpers/_mixins.scss
+@mixin base-headings-font-family-sizing($heading: 2, $current-font-family: $base-headings-font-family) {
+    font-family: $current-font-family;
+    font-size: base-heading-sizes-calc($heading, $current-font-family);
+    line-height: base-heading-line-height($heading, $current-font-family);
+}
+
+// mastering-sass/scss/helpers/_mixins.scss
+// =base-headings
+//   $i: 1
+//   @each $heading, $family in $base-headings
+//     #{$heading}
+//       +base-headings-font-family-sizing($i, $family)
+//     $i: $i + 1
+
+// mastering-sass/scss/helpers/_mixins.scss
+@mixin base-headings {
+    @warn "Please use @include mastering-sass-base-headings() instead of @include base-headings(). @mixin base-headings() will be deprecated in version 2.";
+
+    $i: 1;
+
+    @each $heading, $family in $base-headings {
+        #{$heading} {
+            @include base-headings-font-family-sizing($i, $family);
+        }
+
+        $i: $i + 1;
+    }
+}

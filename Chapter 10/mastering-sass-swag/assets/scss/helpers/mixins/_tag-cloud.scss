@@ -1,0 +1,21 @@
+@mixin tag-cloud($base: 1em) {
+    .xs {
+        font-size: ($base * 0.5);
+    }
+
+    .sm {
+        font-size: ($base * 0.75);
+    }
+
+    .md {
+        font-size: $base;
+    }
+
+    .lg {
+        font-size: ($base * 1.25);
+    }
+
+    .xl {
+        font-size: ($base * 1.5);
+    }
+}

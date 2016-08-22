@@ -1,0 +1,34 @@
+.triangle-up, .triangle-down, .triangle-left, .triangle-right {
+  height: 0;
+  width: 0; }
+
+.triangle-down, .triangle-up {
+  border-left-color: transparent !important;
+  border-right-color: transparent !important; }
+
+.triangle-right, .triangle-left {
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important; }
+
+.triangle-up {
+  border-width: 20px;
+  border-style: solid;
+  border-color: currentColor;
+  border-top-color: transparent; }
+.triangle-down {
+  border-width: 20px;
+  border-style: solid;
+  border-color: currentColor;
+  border-bottom-color: transparent; }
+.triangle-left {
+  border-width: 20px;
+  border-style: solid;
+  border-color: currentColor;
+  border-left-color: transparent; }
+.triangle-right {
+  border-width: 20px;
+  border-style: solid;
+  border-color: currentColor;
+  border-right-color: transparent; }
+
+/*# sourceMappingURL=arrows-and-extends.css.map */

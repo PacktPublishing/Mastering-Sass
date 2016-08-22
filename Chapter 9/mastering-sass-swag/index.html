@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mastering Sass Swag - Covering developers front-ends since 2016</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- BEGIN .top-nav -->
+    <nav class="top-nav">
+        <a href="javascript:;" class="top-nav-menu-button" id="top-nav-menu-button">
+            <span class="ion-navicon"></span>
+            <span class="screen-reader-text">
+                Top Nav Button
+            </span>
+        </a>
+        <div class="container">
+            <ul class="top-nav-menu top-nav-contact-menu">
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-android-phone-portrait"></span>
+                    <a href="tel:+0123456789">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            +0123456789
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-email"></span>
+                    <a href="mailto:your@email.here">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            your@email.here
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-social-facebook"></span>
+                    <a href="javascript:;" target="_blank">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            Facebook
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-social-menu-item">
+                    <span class="ion-social-twitter"></span>
+                    <a href="javascript:;" target="_blank">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="top-nav-menu top-nav-shop-menu">
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-filing"></span>
+                    <a href="#">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Account
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-ios-cart"></span>
+                    <a href="javascript:;" id="cart-button">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Cart
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-ios-locked"></span>
+                    <a href="javascript:;">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END .top-nav -->
+
+    <!-- BEGIN .main-header -->
+    <header class="main-header">
+        <div class="main-header-inner container">
+            <div class="main-header-inner-left">
+                <h1 class="main-header-title">Mastering Sass Swag</h1>
+            </div>
+            <div class="main-header-inner-right">
+                <!-- BEGIN search-bar -->
+                <form class="search-bar" action="#" method="get">
+                    <label for="search">
+                        <span class="screen-reader-text">Search for:</span>
+                    </label>
+                    <input id="search" class="search-bar-input" type="search" placeholder="Search...">
+                    <button class="search-bar-button" type="submit">
+                        <span class="screen-reader-text">Search</span>
+                        <span class="ion-android-search"></span>
+                    </button>
+                </form>
+                <!-- END search-bar -->
+            </div>
+        </div>
+    </header>
+    <!-- END .main-header -->
+
+    <!-- BEGIN .main-nav -->
+    <nav class="main-nav">
+        <a href="javascript:;" class="main-nav-menu-button" id="main-nav-menu-button">
+            <span class="ion-navicon-round"></span>
+            <span class="screen-reader-text">
+                Main Menu Button
+            </span>
+        </a>
+        <ul class="main-nav-menu container">
+            <li class="main-nav-menu-item"><a href="#">Home</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Swag</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Blog</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Customers</a></li>
+            <li class="main-nav-menu-item"><a href="#">Who We Are</a></li>
+            <li class="main-nav-menu-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- END .main-nav -->
+
+    <!-- BEGIN .cart -->
+    <div id="cart" class="cart">
+        <!-- BEGIN .cart-header -->
+        <header class="cart-header">
+            <a href="javascript:;" id="cart-close-button" class="cart-close-button">
+                <span class="ion-close"></span>
+            <span class="screen-reader-text">
+                Close
+            </span>
+            </a>
+            <h3 class="cart-title">
+                Cart
+            </h3>
+        </header>
+        <!-- END .cart-header -->
+        <!-- BEGIN cart-body -->
+        <div class="cart-body">
+            <ul class="cart-list">
+                <li class="cart-list-item">
+                    <img src="http://placehold.it/150x150" alt="Image of Product" class="cart-list-item-image"/>
+                    <div class="cart-list-item-details">
+                        <h4 class="cart-list-item-title">
+                            <a href="#" class="cart-list-item-title-link">
+                                Mastering Sass T-shirt (Medium)
+                            </a>
+                        </h4>
+                        <span class="cart-list-item-price">
+                            <span class="cart-list-item-price-label">Item Price:</span>
+                            &euro;40
+                        </span>
+                        <a href="#" class="cart-list-item-remove">Remove &times;</a>
+                    </div>
+                </li>
+                <li class="cart-list-item">
+                    <img src="http://placehold.it/150x150" alt="Image of Product" class="cart-list-item-image"/>
+                    <div class="cart-list-item-details">
+                        <h4 class="cart-list-item-title">
+                            <a href="#" class="cart-list-item-title-link">
+                                Mastering Sass Hat (Black)
+                            </a>
+                        </h4>
+                    <span class="cart-list-item-price">
+                        <span class="cart-list-item-price-label">Item Price:</span>
+                        &euro;10
+                    </span>
+                        <a href="#" class="cart-list-item-remove">Remove &times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- END .cart-body -->
+        <!-- BEGIN .cart-footer -->
+        <footer class="cart-footer">
+            <div class="cart-totals">
+                <div class="cart-subtotal">
+                <span class="cart-totals-title cart-subtotal-title">
+                    Subtotal:
+                </span>
+                <span class="cart-totals-value cart-subtotal-value">
+                    €50.00
+                </span>
+                </div>
+                <div class="cart-vat">
+                <span class="cart-totals-title cart-vat-title">
+                    VAT:
+                </span>
+                <span class="cart-totals-value cart-vat-value">
+                    %23
+                </span>
+                </div>
+                <div class="cart-total">
+                <span class="cart-totals-title cart-total-title">
+                    Total:
+                </span>
+                <span class="cart-totals-value cart-total-value">
+                    €
+                </span>
+                </div>
+            </div>
+            <div class="cart-checkout">
+                <a href="#checkout" class="cart-checkout-button">
+                    Go to Checkout &rarr;
+                </a>
+            </div>
+        </footer>
+        <!-- END .cart-footer -->
+    </div>
+    <!-- END .cart -->
+
+    <!-- BEGIN .image-banner -->
+    <div class="image-banner" style="background-image: url('http://placehold.it/1280x400');">
+        <div class="image-banner-overlay">
+            <div class="image-banner-caption">
+                <h2 class="image-banner-caption-title">
+                    Mastering Sass Swag
+                </h2>
+                <p class="image-banner-caption-body">
+                    You bring the Sass...<br>
+                    we'll bring the swag!
+                </p>
+                <a href="#products" class="image-banner-button">View our Swag &rarr;</a>
+            </div>
+        </div>
+    </div>
+    <!-- END .image-banner -->
+
+    <main>
+        <!-- BEGIN .featured-products -->
+        <section class="featured-products">
+
+            <h2 class="featured-product-title">Featured Products</h2>
+
+            <article class="featured-product product-centered">
+                <img src="http://placehold.it/300x400" alt="Image Placeholder" class="product-centered-image featured-product-image">
+                <h3 class="featured-product-title product-centered-title">
+                    <a href="#" class="featured-product-title-link product-centered-title-link">Product</a>
+                </h3>
+                <div class="featured-product-description product-centered-description">
+                    <p>
+                        &euro;60.00
+                    </p>
+                </div>
+                <a href="#" class="featured-product-button product-centered-button">View Product &rarr;</a>
+            </article>
+            <article class="featured-product product-centered">
+                <img src="http://placehold.it/300x400" alt="Image Placeholder" class="product-centered-image featured-product-image">
+                <h3 class="featured-product-title product-centered-title">
+                    <a href="#" class="featured-product-title-link product-centered-title-link">Product</a>
+                </h3>
+                <div class="featured-product-description product-centered-description">
+                    <p>
+                        &euro;60.00
+                    </p>
+                </div>
+                <a href="#" class="featured-product-button product-centered-button">View Product &rarr;</a>
+            </article>
+            <article class="featured-product product-centered">
+                <img src="http://placehold.it/300x400" alt="Image Placeholder" class="product-centered-image featured-product-image">
+                <h3 class="featured-product-title product-centered-title">
+                    <a href="#" class="featured-product-title-link product-centered-title-link">Product</a>
+                </h3>
+                <div class="featured-product-description product-centered-description">
+                    <p>
+                        &euro;60.00
+                    </p>
+                </div>
+                <a href="#" class="featured-product-button product-centered-button">View Product &rarr;</a>
+            </article>
+            <article class="featured-product product-centered">
+                <img src="http://placehold.it/300x400" alt="Image Placeholder" class="product-centered-image featured-product-image">
+                <h3 class="featured-product-title product-centered-title">
+                    <a href="#" class="featured-product-title-link product-centered-title-link">Product</a>
+                </h3>
+                <div class="featured-product-description product-centered-description">
+                    <p>
+                        &euro;60.00
+                    </p>
+                </div>
+                <a href="#" class="featured-product-button product-centered-button">View Product &rarr;</a>
+            </article>
+        </section>
+        <!-- END .featured-products -->
+
+        <!-- BEGIN .testimonials -->
+        <section class="testimonials" style="background-image: url('http://placehold.it/1280x300');">
+            <div class="testimonials-overlay">
+                <article class="testimonial">
+                    <img src="http://placehold.it/75x75" alt="Image of Testimonial Author" class="testimonial-image" />
+                    <h2 class="testimonial-title">
+                        Amazing!!!
+                    </h2>
+                    <blockquote class="testimonial-body">
+                        Amazing products! Amazing prices!
+                    </blockquote>
+                    <cite class="testimonial-author">&mdash; John Doe</cite>
+                </article>
+            </div>
+        </section>
+        <!-- END .testimonials -->
+        <!-- BEGIN .services -->
+        <section class="services">
+            <h3 class="services-title">Swag Services</h3>
+            <div class="container">
+                <article class="service">
+                    <h3 class="service-title">Service One</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur consequuntur dignissimos
+                        dolores eius impedit incidunt soluta voluptatum. Deserunt dolore mollitia placeat quam rerum. Amet
+                        dolorum exercitationem modi porro voluptates?
+                    </p>
+                </article>
+                <article class="service">
+                    <h3 class="service-title">Service Two</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dicta dignissimos est ex, expedita
+                        illum impedit incidunt modi mollitia nam? Asperiores consequuntur dicta eligendi error facilis,
+                        fuga incidunt quo voluptatem.
+                    </p>
+                </article>
+                <article class="service">
+                    <h3 class="service-title">Service Three</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur, atque autem
+                        blanditiis commodi debitis dicta doloribus, ducimus eius eos laudantium magni molestias mollitia
+                        pariatur quod repellendus unde, voluptate voluptatum?
+                    </p>
+                </article>
+                <article class="service">
+                    <h3 class="service-title">Service Four</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque commodi dolore labore
+                        obcaecati! Accusantium delectus dignissimos doloremque fugiat inventore maiores possimus quaerat
+                        quia, rerum sint, totam veritatis voluptates! Quas!
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- END .services -->
+    </main>
+
+    <!-- BEGIN footer -->
+    <footer class="footer">
+        <div class="footer-inner subfooter container">
+            <div class="subfooter-widget">
+                <div class="subfooter-widget-section">
+                    <h3 class="subfooter-widget-section-title">Mastering Sass Swag</h3>
+                    <div class="subfooter-widget-section-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore impedit officia?</p>
+                    </div>
+                </div>
+                <div class="subfooter-widget-section">
+                    <h3 class="subfooter-widget-section-title">
+                        Where the Swag is at
+                    </h3>
+                    <ul class="subfooter-widget-section-socials">
+                        <li>
+                            <a href="#" target="_blank">
+                                <span class="ion-social-facebook-outline"></span>
+                                <span class="screen-reader-text">
+                                    Facebook
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <span class="ion-social-twitter-outline"></span>
+                                <span class="screen-reader-text">
+                                    Twitter
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <span class="ion-social-instagram-outline"></span>
+                                <span class="screen-reader-text">
+                                    Instagram
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subfooter-widget">
+                <div class="subfooter-widget-section">
+                    <h3 class="subfooter-widget-section-title">Top Selling Swag</h3>
+                    <ul class="subfooter-widget-section-list">
+                        <li class="subfooter-widget-section-list-item">
+                            <div class="subfooter-widget-product">
+                                <img src="http://placehold.it/50x50" class="subfooter-widget-product-image" />
+                                <div class="widget-product-details">
+                                    <h4 class="subfooter-widget-product-title">
+                                        <a href="#" class="subfooter-widget-product-title-link">
+                                            Product
+                                        </a>
+                                    </h4>
+                                    <div class="subfooter-widget-product-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="subfooter-widget-section-list-item">
+                            <div class="subfooter-widget-product">
+                                <img src="http://placehold.it/50x50" class="subfooter-widget-product-image" />
+                                <div class="widget-product-details">
+                                    <h4 class="subfooter-widget-product-title">
+                                        <a href="#" class="subfooter-widget-product-title-link">
+                                            Product
+                                        </a>
+                                    </h4>
+                                    <div class="subfooter-widget-product-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subfooter-widget">
+                <div class="subfooter-widget-section">
+                    <h3 class="subfooter-widget-section-title">Swag Tags</h3>
+                    <ul class="subfooter-widget-section-tagcloud">
+                        <li class="md"><a href="#">Tag 1</a></li>
+                        <li class="xs"><a href="#">Tag 2</a></li>
+                        <li class="xl"><a href="#">Tag 3</a></li>
+                        <li class="md"><a href="#">Tag 4</a></li>
+                        <li class="lg"><a href="#">Tag 5</a></li>
+                        <li class="sm"><a href="#">Tag 6</a></li>
+                        <li class="md"><a href="#">Tag 7</a></li>
+                        <li class="md"><a href="#">Tag 8</a></li>
+                        <li class="xs"><a href="#">Tag 9</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-inner container">
+            <div class="footer-copyright">
+               <span class="footer-copyright-text">
+                   &copy; Since 2016. Mastering Sass Swag. All rights reserved
+               </span>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-menu">
+                    <li class="footer-nav-menu-item"><a href="#">Terms and Conditions</a></li>
+                    <li class="footer-nav-menu-item"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-nav-menu-item"><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- FOOTER SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $cartButton = $('#cart-button');
+            $cartCloseButton = $('#cart-close-button');
+            $cart = $('#cart');
+
+            $cartButton.on('click', function () {
+                $cart.toggleClass('is-opened');
+            });
+
+            $cartCloseButton.on('click', function () {
+                $cart.removeClass('is-opened');
+            });
+
+            // Top Nav Button
+            $topNavButton = $('#top-nav-menu-button');
+
+            $topNavButton.on('click', function (e) {
+                e.preventDefault();
+
+                $(this).next().slideToggle();
+            });
+
+            // Main Nav Button
+            $mainNavButton = $('#main-nav-menu-button');
+
+            $mainNavButton.on('click', function (e) {
+                e.preventDefault();
+
+                $(this).next().slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+$breakpoints: (
+    (small 480px),
+    (medium 980px)
+);
+
+@function list-get($list, $value) {
+  @each $item in $list {
+    @if $value == nth($item, 1) {
+      @return nth($item, 2);
+    }
+  }
+
+  @return false;
+}
+
+@debug list-get($breakpoints, small);

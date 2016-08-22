@@ -1,0 +1,37 @@
+$default-breakpoint: medium;
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 980px
+);
+
+$cart: (
+    slide-in: right,
+    height: 100vh,
+    width: (
+        small: 100vw,
+        medium: 20em
+    ),
+    spacing: 1em,
+    bg-color: white,
+    transition-speed: 350ms
+);
+
+$ionicons-font-path: "fonts/ionicons";
+
+@import "helpers/all.scss";
+@import "base/normalize.scss";
+@import "base/global.scss";
+@import "base/typography.scss";
+@import "layout/grid.scss";
+@import "components/top-nav.scss";
+@import "components/search.scss";
+@import "components/cart.scss";
+@import "components/footer.scss";
+@import "theme/ionicons/ionicons.scss";
+
+main {
+    @include bp {
+        min-height: 800px;
+    }
+}

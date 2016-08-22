@@ -1,0 +1,20 @@
+{
+  "name": "mastering-sass-swag",
+  "description": "Front-end for Mastering Sass Swag",
+  "main": "gulpfile.js",
+  "authors": [
+    "Luke Watts"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

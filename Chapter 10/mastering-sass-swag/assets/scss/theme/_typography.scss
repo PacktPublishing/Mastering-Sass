@@ -1,0 +1,63 @@
+$fonts: (
+    'Bilbo+Swash+Caps',
+    'Roboto'
+) !default;
+
+$main-font: 'Verdana' !default;
+$secondary-font: 'Roboto' !default;
+$tertiary-font: 'Bilbo Swash Caps' !default;
+
+$body-font-family: ($main-font, Verdana, Geneva, sans-serif) !default;
+$heading-font-family: ($secondary-font, Helvetica, Arial, sans-serif) !default;
+$accent-font-family: ($tertiary-font, cursive) !default;
+
+@each $font in $fonts {
+    @import url('http://fonts.googleapis.com/css?family=#{$font}');
+}
+
+body {
+    font-family: $body-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+}
+
+.main-header-title {
+    font-size: 1.75em;
+
+    > span {
+        font-family: $accent-font-family;
+        font-size: 2em;
+        font-style: italic;
+    }
+}
+
+.section-title {
+    @include underline(center, get($theme, color, primary));
+
+    padding-top: $spacing;
+}
+
+.service {
+    text-align: center;
+
+    [class^="ion-"] {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+}
+
+.subfooter-widget-section {
+    &-text > p {
+        @include dropcap;
+    }
+
+    &-tagcloud {
+        @include tag-cloud;
+    }
+
+    &-socials {
+        font-size: 2em;
+    }
+}

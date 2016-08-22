@@ -1,0 +1,89 @@
+$red: hsl(0, 57%, 60%) !default;
+$dark-grey: hsl(0, 3%, 22%) !default;
+
+$theme: (
+    color: (
+        primary: $red,
+        secondary: $dark-grey
+    )
+) !default;
+
+.top-nav, .main-nav {
+    a, [class^="ion-"] {
+        color: white;
+    }
+}
+
+.top-nav {
+    background-color: get($theme, color, primary);
+
+    a {
+        @include hover-link;
+    }
+}
+
+.main {
+    &-nav {
+        background-color: get($theme, color, secondary);
+
+        &-menu-item {
+            a {
+                text-decoration: none;
+            }
+
+            &:hover a {
+                color: get($theme, color, primary);
+            }
+        }
+    }
+
+    &-header-title > span {
+        color: get($theme, color, primary);
+    }
+}
+
+// Search
+.search-bar {
+    &-input, &-button {
+        border: 1px solid get($theme, color, secondary);
+
+        &:active, &:focus, &:hover {
+            border: 1px solid get($theme, color, primary);
+        }
+    }
+
+    &-button {
+        background-color: get($theme, color, secondary);
+        color: white;
+
+        &:active, &:focus, &:hover {
+            background-color: get($theme, color, primary);
+        }
+    }
+}
+
+// Service Icon Color
+.service [class^="ion-"] {
+    color: get($theme, color, primary);
+}
+
+.footer {
+    background-color: get($theme, color, secondary);
+    color: white;
+
+    a,
+    a:hover,
+    .subfooter a,
+    .subfooter a:hover {
+        @include hover-link;
+        color: get($theme, color, primary);
+    }
+
+    .subfooter-widget-section-text > p:first-of-type::first-letter {
+        color: get($theme, color, primary);
+    }
+
+    .footer-inner:last-child {
+        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+}

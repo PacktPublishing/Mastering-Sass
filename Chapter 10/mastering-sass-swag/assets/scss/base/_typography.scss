@@ -1,0 +1,18 @@
+.screen-reader-text {
+  // Dimensions
+  // make our element as small as possible
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+
+  // Positioning
+  // This lifts our element out of it's container to prevent it interfering with our layout
+  position: absolute !important;
+
+  // Visibility
+  overflow: hidden; // This stop scroll bars appearing
+
+  // Theme
+  // Some screen reader and browsers read broken/hyphenated words as they would appear visually
+  word-wrap: normal !important;
+}

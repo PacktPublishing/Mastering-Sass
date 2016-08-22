@@ -1,0 +1,26 @@
+.square1, .square2, .square3, .square4, .square5 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  text-align: center; }
+
+.square1 {
+  background-color: #df9f9f; }
+
+.square2 {
+  background-color: #df9f9f;
+  color: black; }
+
+.square3 {
+  background-color: orange; }
+
+.square4 {
+  background-color: red;
+  color: white; }
+
+.square5 {
+  background-color: red;
+  color: white; }
+
+/*# sourceMappingURL=variable-scope-in-mixins.css.map */

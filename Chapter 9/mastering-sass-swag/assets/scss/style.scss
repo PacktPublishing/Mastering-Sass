@@ -1,0 +1,58 @@
+$spacing: 1em;
+
+$default-breakpoint: medium;
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 980px
+);
+
+$susy: (
+    container: 1160px,
+    columns: 12,
+    gutters: 1/3
+);
+
+$cart: (
+    slide-in: right,
+    height: 100vh,
+    width: (
+        small: 100vw,
+        medium: 20em
+    ),
+    spacing: 1em,
+    bg-color: white,
+    transition-speed: 350ms
+);
+
+$image-banner: (
+    height: 400px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+);
+
+$testimonials: (
+    height: 300px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+);
+
+$ionicons-font-path: "fonts/ionicons";
+
+@import '../../bower_components/susy/sass/susy';
+@import "helpers/all";
+@import "base/normailize";
+@import "base/global";
+@import "base/typography";
+@import "layout/grid";
+@import "components/top-nav";
+@import "components/main-header";
+@import "components/main-nav";
+@import "components/search";
+@import "components/cart";
+@import "components/image-banner";
+@import "components/featured-product";
+@import "components/product-centered";
+@import "components/testimonials";
+@import "components/services";
+@import "components/subfooter";
+@import "components/footer";
+@import "theme/ionicons/ionicons";

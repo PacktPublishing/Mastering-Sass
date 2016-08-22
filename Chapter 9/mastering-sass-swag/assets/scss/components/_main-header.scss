@@ -1,0 +1,23 @@
+.main-header {
+    overflow: hidden;
+}
+
+.main-header-inner {
+    padding: $spacing / 2;
+
+    &-left {
+        @include span(12);
+
+        @include bp {
+            @include span(8);
+        }
+    }
+
+    &-right {
+        @include span(12);
+
+        @include bp {
+            @include span(4 last);
+        }
+    }
+}

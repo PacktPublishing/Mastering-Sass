@@ -1,0 +1,50 @@
+$bg-color: hsl(0, 50%, 75%);
+
+@function set-color() {
+    @if lightness($bg-color) > 50% {
+        $bg-color: red !global;
+        @return black;
+    } @else {
+
+        @return white;
+    }
+}
+
+@mixin colors() {
+    background-color: $bg-color;
+    color: set-color();
+}
+
+%square {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.square1 {
+    @extend %square;
+    background-color: $bg-color;
+}
+
+.square2 {
+    @extend %square;
+    @include colors;
+}
+
+.square3 {
+    $bg-color: orange;
+    @extend %square;
+    background-color: $bg-color;
+}
+
+.square4 {
+    @extend %square;
+    @include colors;
+}
+
+.square5 {
+    @extend %square;
+    @include colors;
+}

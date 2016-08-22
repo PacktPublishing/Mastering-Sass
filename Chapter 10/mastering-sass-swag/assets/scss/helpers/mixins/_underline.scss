@@ -1,0 +1,23 @@
+@mixin underline($align: left, $color: black, $height: 3px, $width: 3em, $spacing: 0.75em) {
+    text-align: unquote($align);
+
+    &::after {
+        display: block;
+        content: " ";
+        position: relative;
+        height: $height;
+        background-color: $color;
+        top: 0;
+        width: $width;
+        margin-top: $spacing;
+
+        @if ($align == center) {
+            left: 50%;
+            margin-left: -#{($width / 2)}
+        } @else if ($align == right) {
+            right: 0;
+        } @else {
+            left: 0;
+        }
+    }
+}

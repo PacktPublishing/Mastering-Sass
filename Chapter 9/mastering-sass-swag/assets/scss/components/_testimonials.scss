@@ -1,0 +1,26 @@
+$testimonials: (
+    height: 300px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+) !default;
+
+.testimonial {
+    max-width: 20em;
+    margin: 0 auto;
+
+    @include media-centered(rounded);
+
+    &s {
+        background: {
+            position: center center;
+            size: cover;
+            repeat: no-repeat;
+        }
+
+        &-overlay {
+            min-height: get($testimonials, height); // So container can grow for long testimonials
+            padding-top: $spacing * 2;
+            padding-bottom: $spacing * 2;
+            background-color: get($testimonials, overlay-color);
+        }
+    }
+}

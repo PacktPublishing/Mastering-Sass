@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mastering Sass Swag - Covering developers front-ends since 2016</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- BEGIN .top-nav -->
+    <nav class="top-nav">
+        <div class="container">
+            <ul class="top-nav-menu top-nav-contact-menu">
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-android-phone-portrait"></span>
+                    <a href="tel:+0123456789">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            +0123456789
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-email"></span>
+                    <a href="mailto:your@email.here">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            your@email.here
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-contact-menu-item">
+                    <span class="ion-social-facebook"></span>
+                    <a href="javascript:;" target="_blank">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            Facebook
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-social-menu-item">
+                    <span class="ion-social-twitter"></span>
+                    <a href="javascript:;" target="_blank">
+                        <span class="top-nav-menu-text top-nav-contact-menu-text">
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="top-nav-menu-item top-nav-shop-menu">
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-filing"></span>
+                    <a href="#">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Account
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-ios-cart"></span>
+                    <a href="javascript:;" id="cart-button">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Cart
+                        </span>
+                    </a>
+                </li>
+                <li class="top-nav-menu-item top-nav-shop-menu-item">
+                    <span class="ion-ios-locked"></span>
+                    <a href="javascript:;">
+                        <span class="top-nav-menu-text top-nav-shop-menu-text">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END .top-nav -->
+
+    <!-- BEGIN .main-header -->
+    <header class="main-header">
+        <div class="main-header-inner container">
+            <div class="two-thirds column">
+                <h1 class="main-header-title">Mastering Sass Swag</h1>
+            </div>
+            <div class="one-third column">
+                <!-- BEGIN search-bar -->
+                <form class="search-bar" action="" method="get">
+                    <label for="search">
+                        <span class="screen-reader-text">Search for:</span>
+                    </label>
+                    <input id="search" class="search-bar-input" type="search" placeholder="Search...">
+                    <button class="search-bar-button" type="submit">
+                        <span class="screen-reader-text">Search</span>
+                        <span class="ion-android-search"></span>
+                    </button>
+                </form>
+                <!-- END search-bar -->
+            </div>
+        </div>
+    </header>
+    <!-- END .main-header -->
+
+    <!-- BEGIN .main-nav -->
+    <nav class="main-nav">
+        <ul class="main-nav-menu container">
+            <li class="main-nav-menu-item"><a href="#">Home</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Swag</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Blog</a></li>
+            <li class="main-nav-menu-item"><a href="#">Our Customers</a></li>
+            <li class="main-nav-menu-item"><a href="#">Who We Are</a></li>
+            <li class="main-nav-menu-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- END .main-nav -->
+
+    <!-- BEGIN .cart -->
+    <div id="cart" class="cart">
+        <!-- BEGIN .cart-header -->
+        <header class="cart-header">
+            <a href="javascript:;" id="cart-close-button" class="cart-close-button">
+                <span class="ion-close"></span>
+            <span class="screen-reader-text">
+                Close
+            </span>
+            </a>
+            <h3 class="cart-title">
+                Cart
+            </h3>
+        </header>
+        <!-- END .cart-header -->
+        <!-- BEGIN cart-body -->
+        <div class="cart-body">
+            <ul class="cart-list">
+                <li class="cart-list-item">
+                    <img src="http://placehold.it/150x150" alt="Image of Product" class="cart-list-item-image"/>
+                    <div class="cart-list-item-details">
+                        <h4 class="cart-list-item-title">
+                            <a href="#" class="cart-list-item-title-link">
+                                Mastering Sass T-shirt (Medium)
+                            </a>
+                        </h4>
+                        <span class="cart-list-item-price">
+                            <span class="cart-list-item-price-label">Item Price:</span>
+                            &euro;40
+                        </span>
+                        <a href="#" class="cart-list-item-remove">Remove &times;</a>
+                    </div>
+                </li>
+                <li class="cart-list-item">
+                    <img src="http://placehold.it/150x150" alt="Image of Product" class="cart-list-item-image"/>
+                    <div class="cart-list-item-details">
+                        <h4 class="cart-list-item-title">
+                            <a href="#" class="cart-list-item-title-link">
+                                Mastering Sass Hat (Black)
+                            </a>
+                        </h4>
+                    <span class="cart-list-item-price">
+                        <span class="cart-list-item-price-label">Item Price:</span>
+                        &euro;10
+                    </span>
+                        <a href="#" class="cart-list-item-remove">Remove &times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- END .cart-body -->
+        <!-- BEGIN .cart-footer -->
+        <footer class="cart-footer">
+            <div class="cart-totals">
+                <div class="cart-subtotal">
+                <span class="cart-totals-title cart-subtotal-title">
+                    Subtotal:
+                </span>
+                <span class="cart-totals-value cart-subtotal-value">
+                    €50.00
+                </span>
+                </div>
+                <div class="cart-vat">
+                <span class="cart-totals-title cart-vat-title">
+                    VAT:
+                </span>
+                <span class="cart-totals-value cart-vat-value">
+                    %23
+                </span>
+                </div>
+                <div class="cart-total">
+                <span class="cart-totals-title cart-total-title">
+                    Total:
+                </span>
+                <span class="cart-totals-value cart-total-value">
+                    €
+                </span>
+                </div>
+            </div>
+            <div class="cart-checkout">
+                <a href="#checkout" class="cart-checkout-button">
+                    Go to Checkout &rarr;
+                </a>
+            </div>
+        </footer>
+        <!-- END .cart-footer -->
+    </div>
+    <!-- END .cart -->
+
+    <!-- BEGIN main -->
+    <main>
+        <article class="container">
+        <h1>
+            Mastering Sass Swag
+        </h1>
+        <h2>
+            Coming soon
+        </h2>
+        <p>
+            Sorry! Our front-end is a little exposed right now...
+        </p>
+        <p>
+            We'll find something to cover it up with real soon!
+        </p>
+        </article>
+    </main>
+    <!-- END main -->
+
+    <!-- BEGIN header -->
+    <footer class="footer container">
+        <div class="footer-copyright">
+            <span class="footer-copyright-text">
+                &copy; Since 2016. Mastering Sass Swag. All rights reserved
+            </span>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+                <li class="footer-nav-menu-item"><a href="#">Terms &amp; Conditions</a></li>
+                <li class="footer-nav-menu-item"><a href="#">Privacy Policy</a></li>
+                <li class="footer-nav-menu-item"><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- END footer -->
+
+    <!-- BEGIN FOOTER SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $cartButton = $('#cart-button');
+            $cartCloseButton = $('#cart-close-button');
+            $cart = $('#cart');
+
+            $cartButton.on('click', function () {
+                $cart.toggleClass('is-opened');
+            });
+
+            $cartCloseButton.on('click', function () {
+                $cart.removeClass('is-opened');
+            });
+        });
+    </script>
+    <!-- END FOOTER SCRIPTS -->
+</body>
+</html>

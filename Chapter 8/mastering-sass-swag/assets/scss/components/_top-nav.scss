@@ -1,0 +1,15 @@
+.top-nav {
+  overflow: hidden;
+
+  &-contact-menu {
+    @include bp {
+      float: left;
+    }
+  }
+
+  &-shop-menu {
+    @include bp {
+      float: right;
+    }
+  }
+}

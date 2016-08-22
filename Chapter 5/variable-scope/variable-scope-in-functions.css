@@ -1,0 +1,21 @@
+.square1, .square2, .square3, .square4, .square5 {
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+.square1 {
+  background-color: green; }
+
+.square2 {
+  background-color: green; }
+
+.square3 {
+  background-color: orange; }
+
+.square4 {
+  background-color: blue; }
+
+.square5 {
+  background-color: red; }
+
+/*# sourceMappingURL=variable-scope-in-functions.css.map */

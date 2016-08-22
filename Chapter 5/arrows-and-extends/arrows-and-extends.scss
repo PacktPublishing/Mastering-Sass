@@ -1,0 +1,80 @@
+%arrow-base {
+  height: 0;
+  width: 0;
+}
+
+%arrow-up {
+    border: {
+        left-color: transparent !important;
+        right-color: transparent !important;
+        // left-color: transparent;
+        // right-color: transparent;
+    }
+}
+
+%arrow-left {
+    border: {
+        top-color: transparent !important;
+        bottom-color: transparent !important;
+        // top-color: transparent;
+        // bottom-color: transparent;
+    }
+}
+
+%arrow-down {
+  @extend %arrow-up;
+}
+
+%arrow-right {
+    @extend %arrow-left;
+}
+
+@mixin arrow($direction: "up", $size: 20px, $color: currentColor) {
+  $valid-directions: (up, down, left, right);
+
+    @if (type-of($direction) == 'string') {
+        $direction: unquote($direction);
+    } @else {
+        @error "Value of $direction in arrow mixin must be a string. #{type-of($direction)} was given.";
+    }
+
+    @extend %arrow-base;
+
+    @if index($valid-directions, $direction) {
+        @extend %arrow-#{$direction};
+    } @else {
+        @error "$direction must be up, down, left, or right in arrow mixin. #{$direction} was given.";
+    }
+
+    border: {
+        width: $size;
+        style: solid;
+        color: $color;
+    }
+
+    @if index((up, down), $direction) {
+        $direction: if($direction == up, top, bottom);
+    }
+
+    border-#{$direction}-color: transparent;
+
+    @content;
+}
+
+.triangle {
+    &-up {
+        @include arrow(up);
+    }
+
+    &-down {
+        @include arrow(down);
+    }
+
+    &-left {
+        @include arrow(left);
+    }
+
+    &-right {
+        @include arrow(right);
+    }
+}

@@ -1,0 +1,33 @@
+.service {
+    @include span(12);
+
+    &s {
+        @include container;
+
+        padding: $spacing ($spacing / 2);
+    }
+}
+
+@include bp(small) {
+    .service {
+        @include span(6);
+
+        &:nth-child(2), &:nth-child(4) {
+            @include span(6 last);
+        }
+    }
+}
+
+@include bp {
+    .service {
+        @include span(3);
+
+        &:nth-child(2) {
+            @include span(3);
+        }
+
+        &:nth-child(4) {
+            @include span(3 last);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Mastering Sass: Chapter 2
+
+        link(href="css/style.css" rel="stylesheet")
+    
+    body
+        div
+            - var i = 1
+            each heading in ["h1", "h2", "h3", "h4", "h5", "h6"]
+                #{heading} Heading #{i}
+                - i++
+            p
+                | This is a paragraph with 
+                em emphasised 
+                | text, 
+                strong strong 
+                | text and a 
+                a(href="#") link.
+            p 
+                img(src="http://placehold.it/600x300" alt="Image from Placehold.it")
+                | Um yesbaby terry thomas admiral socially mobile brush mexican bad guy, groucho marx admiral um yesbaby rock n roll star sportacus mexican brush bad guy furry facial friend terry thomas socially mobile man markings, bad guy pit fighter sportacus terry thomas um yesbaby mexican cigars groucho marx man markings admiral challenge you to a duel robert winston rock n roll star brush socially mobile furry facial friend. Furry facial friend village people lady magnets I drink your milkshake louis xiii, sweat irrigator, glorious facial hair mustachioed east european louis xiii Freddie mercury hairy kiss. I drink your milkshake lady magnets furry facial friend village people basil fawlty, I drink your milkshake lady magnets louis xiii east european et village people sweat irrigator, mustachioed Freddie mercury hairy kiss. brandy basil fawlty jimi hendrix furry facial friend glorious facial hair.
+            p
+                img(src="http://placehold.it/300x200" alt="Image from Placehold.it" style="float:left;")
+                | Mexican’t great dictator burt reynolds graeme souness, sportacus boogie nights got milk graeme souness caterpillar professor plum sam elliott mexican’t great dictator burt reynolds id furry facial friend, mexican’t got milk burt reynolds sam elliott id boogie nights sportacus waiter top gun caterpillar great dictator elit furry facial friend graeme souness professor plum? Waiter david seaman musketeer mr frothy-top knavish rogue, waiter doctor strange david seaman et sodales cum terry thomas iron tache waiter musketeer mr frothy-top knavish rogue tony stark, knavish rogue musketeer mark lawrenson iron tache terry thomas stiff upper lip waiter doctor strange waiter et sodales cum give him what-for handsome tony stark david seaman face mop mr frothy-top bruce forsyth circus strongman?
+
+            ul
+                - var n = 1
+                while n <= 4
+                    li List Item #{n++}

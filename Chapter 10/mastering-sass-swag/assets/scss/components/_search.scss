@@ -1,0 +1,25 @@
+.search-bar {
+    position: relative;
+
+    &-input {
+        // Dimensions
+        width: 100%;
+        line-height: 1.4;
+        max-height: 2em;
+
+        // Positioning
+        padding: 0.25em 2em 0.25em 0.25em;
+    }
+
+    &-button {
+        // Dimensions
+        line-height: 1.4;
+        max-height: 2em;
+        padding: 0.25em 0.5em;
+
+        // Positioning
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

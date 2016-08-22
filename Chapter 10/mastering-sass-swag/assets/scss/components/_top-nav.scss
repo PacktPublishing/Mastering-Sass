@@ -1,0 +1,40 @@
+.top-nav {
+    overflow: hidden;
+
+    &-menu-button {
+        padding: $spacing / 2;
+
+        @include bp(small) {
+            display: none;
+        }
+
+        ~ * {
+            display: none;
+
+            @include bp(small) {
+                display: block;
+            }
+        }
+    }
+
+    &-menu-item {
+        padding: $spacing / 2;
+        display: block;
+
+        @include bp(small) {
+            display: inline-block;
+        }
+    }
+
+    &-contact-menu {
+        @include bp {
+            float: left;
+        }
+    }
+
+    &-shop-menu {
+        @include bp {
+            float: right;
+        }
+    }
+}

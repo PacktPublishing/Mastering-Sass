@@ -1,0 +1,23 @@
+.footer {
+    overflwo: hidden;
+
+    &-copyright, &-nav {
+        @include bp {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    &-copyright {
+        padding: $spacing ($spacing / 2);
+    }
+
+    &-nav-menu {
+        float: right;
+
+        &-item a {
+            display: inline-block;
+            padding: $spacing ($spacing / 2);
+        }
+    }
+}

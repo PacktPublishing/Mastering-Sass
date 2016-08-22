@@ -1,0 +1,48 @@
+.subfooter {
+    padding: ($spacing * 2) ($spacing / 2) $spacing ($spacing / 2);
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &-widget {
+        @include span(12);
+
+        &-product {
+            @include media-container;
+
+            padding: 0 0 ($spacing / 2) 0;
+
+            &-image {
+                @include media-image(left, $spacing);
+            }
+
+            &-title {
+                @include media-title();
+                margin: 0;
+            }
+        }
+
+        &-section {
+            &-socials, &-tagcloud {
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@include bp(medium) {
+    .subfooter {
+        &-widget {
+            @include span(4);
+
+            &:last-child {
+                @include span(4 last);
+            }
+        }
+    }
+}

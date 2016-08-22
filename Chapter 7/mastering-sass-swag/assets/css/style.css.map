@@ -1,0 +1,1 @@
+{"version":3,"mappings":";AAAA,IAAK;EACD,WAAW,EAAE,GAAG;;;;AAGpB,SAAU;EACN,UAAU,EAAE,MAAM","sources":["style.scss"],"names":[],"file":"style.css","sourceRoot":"/source/","sourcesContent":["main {\n    padding-top: 2em;\n}\n\nh1, h2, p {\n    text-align: center;\n}\n"]}

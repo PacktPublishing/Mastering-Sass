@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body > div {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 2.3rem;
+  line-height: 1.72504rem;
+}
+
+h2 {
+  font-family: serif;
+  font-size: 1.72504rem;
+  line-height: 1.34548rem;
+}
+
+h3 {
+  font-family: serif;
+  font-size: 1.34548rem;
+  line-height: 1.15rem;
+}
+
+h4 {
+  font-family: serif;
+  font-size: 1.15rem;
+  line-height: 0.95452rem;
+}
+
+h5 {
+  font-family: serif;
+  font-size: 0.95452rem;
+  line-height: 0.77052rem;
+}
+
+h6 {
+  font-family: serif;
+  font-size: 0.77052rem;
+  line-height: 0.44666;
+}
+
+/*# sourceMappingURL=style.css.map */

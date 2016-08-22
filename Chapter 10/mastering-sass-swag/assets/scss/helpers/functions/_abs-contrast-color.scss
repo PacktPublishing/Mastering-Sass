@@ -1,0 +1,11 @@
+@function abs-contrast-color($color) {
+    @if (type-of($color) == color) {
+        @if (lightness($color) <= 50%) {
+            @return white;
+        } @else {
+            @return black;
+        }
+    } @else {
+        @error 'Type of `$color` must be a valid color. Type of `' + type_of($color) + '` given.';
+    }
+}

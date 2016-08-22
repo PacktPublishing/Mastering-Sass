@@ -1,0 +1,66 @@
+// Theme
+$ionicons-font-path: "fonts/ionicons";
+
+$red: hsl(0, 57%, 60%);
+$blue: hsl(210, 40%, 60%);
+$dark-grey: hsl(0, 3%, 22%);
+
+$theme: (
+    color: (
+        primary: $red,
+        secondary: $dark-grey
+    )
+);
+
+// Typography
+$fonts: (
+    'Bilbo+Swash+Caps',
+    'Roboto'
+);
+
+$main-font: 'Verdana';
+$secondary-font: 'Roboto';
+$tertiary-font: 'Bilbo Swash Caps';
+
+$body-font-family: ($main-font, Verdana, Geneva, sans-serif);
+$heading-font-family: ($secondary-font, Helvetica, Arial, sans-serif);
+$accent-font-family: ($tertiary-font, cursive);
+
+// Layout
+$spacing: 2em;
+
+$default-breakpoint: medium;
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 980px
+);
+
+$susy: (
+    container: 1160px,
+    columns: 12,
+    gutters: 1/3
+);
+
+// Components
+$cart: (
+    slide-in: right,
+    height: 100vh,
+    width: (
+        small: 100vw,
+        medium: 20em
+    ),
+    spacing: 1em,
+    bg-color: white,
+    transition-speed: 350ms
+);
+
+$image-banner: (
+    height: 400px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+);
+
+$testimonials: (
+    height: 300px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+);

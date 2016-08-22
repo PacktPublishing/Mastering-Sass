@@ -1,0 +1,42 @@
+.featured-product {
+    @include span(12);
+
+    padding-left: $spacing;
+    padding-right: $spacing;
+
+    &-title {
+        padding-top: $spacing;
+    }
+
+    &s {
+        @include container;
+
+        padding: $spacing ($spacing / 2);
+    }
+}
+
+// 480px up
+@include bp(small) {
+    .featured-product {
+        @include span(6);
+
+        &:nth-child(2), &:nth-child(4) {
+            @include span(6 last);
+        }
+    }
+}
+
+// 768px up
+@include bp(medium) {
+    .featured-product {
+        @include span(3);
+
+        &:nth-child(2) {
+            @include span(3);
+        }
+
+        &:nth-child(4) {
+            @include span(3 last);
+        }
+    }
+}

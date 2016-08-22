@@ -1,0 +1,24 @@
+$bg-color: red;
+
+%square {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.square1 {
+    @extend %square;
+    background-color: $bg-color;
+}
+
+.square2 {
+    $bg-color: blue !global;
+    @extend %square;
+    background-color: $bg-color;
+}
+
+.square3 {
+    // $bg-color: orange;
+    @extend %square;
+    background-color: $bg-color;
+}

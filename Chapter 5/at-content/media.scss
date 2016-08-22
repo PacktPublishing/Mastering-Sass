@@ -1,0 +1,52 @@
+$small: 480px;
+$medium: 768px;
+$large: 980px;
+$breakpoints: (
+    (small 480px),
+    (medium 768px),
+    (large 980px)
+);
+
+@mixin media($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.small, .medium, .large {
+    padding: 2em;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+@mixin breakpoint {
+    background-color: black;
+    color: white;
+}
+
+.small {
+    @include media($small) {
+        max-width: $small;
+        @include breakpoint;
+    }
+}
+
+.medium {
+    @include media($medium) {
+        max-width: $medium;
+        @include breakpoint;
+    }
+}
+
+.large {
+    @include media($large) {
+        max-width: $large;
+        @include breakpoint;
+    }
+}

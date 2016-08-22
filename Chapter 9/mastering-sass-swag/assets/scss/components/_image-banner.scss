@@ -1,0 +1,36 @@
+$image-banner: (
+    height: 400px,
+    overlay-color: hsla(0, 0%, 0%, 0.5)
+) !default;
+
+.image-banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-overlay {
+        height: get($image-banner, height) / 2;
+        background-color: get($image-banner, overlay-color);
+
+        @include bp(large) {
+            height: get($image-banner, height);
+        }
+    }
+
+    &-caption {
+        @include container;
+        @include media-container($spacing / 2);
+        @include bp(large) {
+            position: relative;
+            top: get($image-banner, height) / 4;
+        }
+
+        &-title {
+            @include media-title(white);
+        }
+    }
+
+    &-button {
+        @include media-button(none);
+    }
+}

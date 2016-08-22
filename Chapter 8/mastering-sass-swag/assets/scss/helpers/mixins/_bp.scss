@@ -1,0 +1,12 @@
+$default-breakpoint: medium !default;
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 980px
+) !default;
+
+@mixin bp($size: unquote($default-breakpoint), $breakpoints: $breakpoints) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}

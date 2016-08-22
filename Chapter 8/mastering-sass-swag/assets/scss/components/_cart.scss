@@ -1,0 +1,104 @@
+$cart: (
+    slide-in: right,
+    height: 100vh,
+    width: (
+        small: 100vw,
+        medium: 20em
+    ),
+    spacing: 1em,
+    bg-color: white,
+    transition-speed: 350ms
+) !default;
+
+.cart {
+    // Dimensions
+    height: get($cart, height);
+    width: get($cart, width, small);
+
+    // Positioning
+    position: absolute;
+    padding: get($cart, spacing);
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+
+    // What side will the panel slide in from
+    @if (get($cart, slide-in) == 'right') {
+        right: -#{get($cart, width, small)};
+    } @else {
+        left: -#{get($cart, width, small)};
+        @warn 'The `slide-in` property must be "left" or "right" in the $cart map.';
+    }
+
+    // State
+    transition: transform get($cart, transition-speed);
+
+    // Theme
+    background-color: get($cart, bg-color);
+
+    @include bp {
+        width: get($cart, width, medium);
+
+        // What side will the panel slide in from
+        @if (get($cart, slide-in) == 'right') {
+            right: -#{get($cart, width, medium)};
+        } @else {
+            left: -#{get($cart, width, medium)};
+        }
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+
+        &-item {
+            @include media-container(get($cart, spacing));
+
+            padding-left: 0;
+
+            &-image {
+                @include media-image(left, get($cart, spacing));
+
+                max-width: 50px;
+                height: auto;
+            }
+
+            &-title {
+                @include media-title();
+            }
+
+            &-price {
+                float: left;
+
+                &-label {
+                    font-weight: bold;
+                }
+            }
+
+            &-remove {
+                @include hover-link;
+
+                float: right;
+            }
+        }
+    }
+}
+
+.cart.is-opened {
+    // What side will the panel slide in from
+    @if (get($cart, slide-in) == 'right') {
+        transform: translateX(-#{get($cart, width, small)});
+    } @else {
+        transform: translateX(#{get($cart, width, small)});
+    }
+
+    @include bp {
+        @if (get($cart, slide-in) == 'right') {
+            transform: translateX(-#{get($cart, width, medium)});
+        } @else {
+            transform: translateX(#{get($cart, width, medium)})
+        }
+    }
+}
