@@ -1,5 +1,5 @@
 # Mastering-Sass
-By Packt Publishing
+By Packt
 
 This is the code repository for [Mastering Sass](https://www.packtpub.com/web-development/mastering-sass), published by [Packt Publishing](https://www.packtpub.com/). It contains all the required files to run the code.
 
