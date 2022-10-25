@@ -33,3 +33,7 @@ This book is aimed at those who know CSS3 and HTML5 quite well and who've built 
 
 *[Instant SASS CSS How-to](https://www.packtpub.com/web-development/instant-sass-css-how?utm_source=github&utm_medium=repository&utm_campaign=9781782163787)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781785883361">https://packt.link/free-ebook/9781785883361 </a> </p>
